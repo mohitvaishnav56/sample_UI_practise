@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Charm:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background: #dfe1e4;
+}
+
+nav {
+    width: 100%;
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: +999;
+    background: #dfe1e4;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+nav div {
+    height: 100%;
+    width: 100px;
+    background: red;
+}
+
+nav ul {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    transition: all 3.0 ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(7, 146, 211);
+}
+
+/* Hero Section design */
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1495714096525-285e85481946?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+.hero .content {
+    height: 100%;
+    width: 100%;
+    background: #dfe1e4d5;
+    display: flex;
+    ;
+}
+
+.content .left {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+    gap: 1vh;
+}
+
+.content .left h1 {
+    font-size: 5vw;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: rgb(22, 22, 22);
+}
+
+
+#phrase_1 {
+    color: rgb(150, 72, 202);
+    font-weight: 900;
+}
+
+.content .left hr {
+    width: 30%;
+    height: 4px;
+    background: rgb(22, 22, 22);
+    border: none;
+    margin-left: 5%;
+}
+
+.content .left p {
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: rgb(22, 22, 22);
+}
+
+.content .left button {
+    padding: 1.5vh 3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2vw;
+    background: rgb(150, 72, 202);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content .left button:hover {
+    background: rgb(117, 54, 187);
+    transform: scale(1.05);
+}
+
+.content .right {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: relative !important;
+    justify-content: center;
+}
+
+.video_container {
+    height: 400px;
+    width: 50%;
+    background: #000;
+    border-radius: 131px 130px 132px 129px;
+    -webkit-border-radius: 131px 130px 132px 129px;
+    -moz-border-radius: 131px 130px 132px 129px;
+    overflow: hidden;
+    border: 10px solid white;
+    position: relative !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.video_container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.play_pause_btn {
+    height: 100px;
+    width: 100px;
+    background: rgb(42, 14, 87);
+    color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 23%;
+    box-shadow: rgb(73, 29, 155) 0px 20px 30px -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.play_pause_btn:hover {
+    background: rgb(73, 29, 155);
+    box-shadow: rgb(42, 14, 87) 0px 25px 35px -10px;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
